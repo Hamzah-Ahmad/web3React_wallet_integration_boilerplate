@@ -85,7 +85,7 @@ function getLibrary(provider) {
 export default function () {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
-      <AppComp />
+      <App />
     </Web3ReactProvider>
   );
 }
@@ -239,7 +239,7 @@ function Header() {
   );
 }
 
-function AppComp() {
+function App() {
   const context = useWeb3React();
   const {
     connector,
